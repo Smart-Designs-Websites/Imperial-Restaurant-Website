@@ -53,3 +53,21 @@ document
       alert("Failed to submit. Please try again.");
     }
   });
+
+function copyNumber() {
+  const phoneNumber = "+256 76 000 0000"; // Replace with your number
+  navigator.clipboard
+    .writeText(phoneNumber)
+    .then(() => {
+      alert(`Number copied: ${phoneNumber}`);
+    })
+    .catch((err) => {
+      console.error("Failed to copy text: ", err);
+    });
+}
+
+function scrollToMenu() {
+  document.getElementById("menu-section").scrollIntoView({
+    behavior: "smooth",
+  });
+}

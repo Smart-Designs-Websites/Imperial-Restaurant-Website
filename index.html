@@ -29,11 +29,11 @@
       <!-- Image slider added here -->
       <div class="image-slider">
         <img src="/images/hero-section-bg1.png" class="slide" alt="Slide 1" />
-
         <img src="images/food-slide.png" class="slide active" alt="Slide" />
         <img src="images/Chef-slide.png" class="slide" alt="Slide" />
         <img src="images/Pizza-slide.png" class="slide" alt="Slide" />
         <img src="images/retaurant-slide.png" class="slide" alt="Slide" />
+        <img src="images/burger-slide.png" class="slide" alt="Slide" />
       </div>
       <header class="navbar">
         <div class="navbar-flex">
@@ -75,8 +75,12 @@
           Restaurant.
         </h2>
         <div class="buttons">
-          <button class="cta cta-btns">Explore Menu</button>
-          <button class="cta-mobile cta-btns">Order Now</button>
+          <button onclick="scrollToMenu()" class="cta cta-btns">
+            Explore Menu
+          </button>
+          <button onclick="copyNumber()" class="cta-mobile cta-btns">
+            Order Now
+          </button>
         </div>
       </section>
     </div>
@@ -160,7 +164,7 @@
     </section>
 
     <!-- Menu Section -->
-    <section class="menu-section">
+    <section class="menu-section" id="menu-section">
       <div class="menu-section-grid">
         <div class="menu-card">
           <img src="/images/Pancake img.png" alt="Pancake" />
