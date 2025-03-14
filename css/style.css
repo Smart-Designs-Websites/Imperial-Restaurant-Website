@@ -100,11 +100,11 @@ a {
   width: 100%;
   height: 11vh;
   padding: 10px;
-  top: -70px;
+  top: -200px;
   right: 0;
   font-family: "Charm", serif;
   background-color: var(--primary-color);
-  font-size: clamp(18px, 2vw, 24px);
+  font-size: clamp(15px, 2vw, 24px);
   transition: top 1s ease-in-out;
 }
 
@@ -209,8 +209,10 @@ h2 {
 
 .hero .buttons {
   display: flex;
-  justify-content: center;
-  width: 50vw;
+  justify-content: space-around;
+  align-items: center;
+  width: 70vw;
+  /* background-color: rgba(0, 0, 0, 1); */
 }
 
 .cta-btns {
@@ -287,11 +289,15 @@ h2 {
   align-items: center;
   color: var(--white);
   /* background-color: rgba(0, 0, 0, 0.7); */
-  font-size: clamp(12px, 2vw, 14px);
+  font-size: clamp(10px, 2vw, 14px);
   height: 100%;
 }
 
-.detail-flex .detail-row {
+.detail-flex .detail-row:first-child {
+  text-align: center;
+  flex: 1;
+}
+.detail-flex .detail-row:last-child {
   text-align: center;
   flex: 1;
 }
@@ -333,6 +339,8 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 50px 0 50px;
+  overflow: hidden;
   /* justify-content: space-between; */
 }
 
@@ -851,9 +859,9 @@ h2 {
     height: 11vh;
   }
 
-  .hero .buttons {
+  /* .hero .buttons {
     justify-content: space-between;
-  }
+  } */
 
   .hero .cta-mobile {
     display: block;
@@ -946,7 +954,9 @@ h2 {
   }
 
   .contact-section .map {
-    display: none;
+    /* display: none; */
+    width: 100%;
+    height: 100%;
   }
 
   .contact-section-flex {
@@ -1064,5 +1074,45 @@ h2 {
     display: block;
     margin-top: 53px;
     padding: 0 10px;
+  }
+}
+
+@media (min-width: 350px) {
+  .mobile-nav {
+    padding: 5px;
+    font-size: clamp(15px, 2vw, 24px);
+  }
+
+  .mobile-nav #logo {
+    margin-right: 10px;
+  }
+
+  .mobile-nav .nav-flex {
+    padding: 0 5px;
+  }
+
+  .mobile-nav a {
+    margin-right: 15px;
+  }
+
+  .text-content p {
+    width: 370px;
+    padding: 0 25px;
+  }
+
+  .detail-flex {
+    padding: 0 1rem;
+  }
+
+  .detail-flex .detail-row {
+    text-align: start;
+  }
+
+  .detail-row.special {
+    text-align: end;
+  }
+
+  .mobile-footer .copyright {
+    margin-bottom: 20px;
   }
 }
