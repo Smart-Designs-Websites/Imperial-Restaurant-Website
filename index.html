@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="images/icon.svg" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Lexend+Deca:wght@100..900&family=Lexend+Exa:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Imperial Restaurant</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Image slider added here -->
+      <div class="image-slider">
+        <img src="/images/hero-section-bg1.png" class="slide" alt="Slide 1" />
+
+        <img src="images/food-slide.png" class="slide active" alt="Slide" />
+        <img src="images/Chef-slide.png" class="slide" alt="Slide" />
+        <img src="images/Pizza-slide.png" class="slide" alt="Slide" />
+        <img src="images/retaurant-slide.png" class="slide" alt="Slide" />
+      </div>
+      <header class="navbar">
+        <div class="navbar-flex">
+          <img
+            src="images/Logo fill.svg"
+            alt="Imperial Restaurant Crown Logo"
+            class="logo"
+          />
+          <nav class="navlinks">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#menu-section">Menu</a></li>
+              <li><a href="#about-section">About Us</a></li>
+              <li><a href="#contact-section">Contact</a></li>
+            </ul>
+          </nav>
+          <!-- Hamburger Menu -->
+
+          <div class="hamburger-icon">
+            <img src="/images/menu close.svg" alt="" class="menu-icon" />
+          </div>
+        </div>
+      </header>
+      <!-- Mobile Nav -->
+      <nav class="mobile-nav">
+        <div class="nav-flex">
+          <img id="logo" src="/images/icon.svg" alt="" />
+          <a href="index.html">Home</a>
+          <a href="#menu-section">Menu</a>
+          <a href="#about-section">About Us</a>
+          <a href="#contact-section">Contact</a>
+          <img class="close-menu" src="/images/menu open.svg" alt="" />
+        </div>
+      </nav>
+      <section class="hero">
+        <h1>A Taste of Elegance, Served to Perfection</h1>
+        <h2>
+          Experience exquisite flavors and refined dining at Imperial
+          Restaurant.
+        </h2>
+        <div class="buttons">
+          <button class="cta cta-btns">Explore Menu</button>
+          <button class="cta-mobile cta-btns">Order Now</button>
+        </div>
+      </section>
+    </div>
+
+    <!-- Details Section -->
+    <section class="details-section container-norm">
+      <div class="detail-flex">
+        <div class="detail">
+          <p>Imperial Restaurant</p>
+          <p>Jomo Kenyatta Road, Gulu</p>
+          <p>Opposite Microfinance</p>
+        </div>
+        <div class="detail">
+          <p>
+            <time datetime="weekday monday tuesday wednesday"
+              >Monday - Saturday</time
+            >
+          </p>
+          <p><time datetime="8am 10am">8:00am - 10:00pm</time></p>
+          <p>Closed On Sundays</p>
+        </div>
+        <div class="detail">
+          <p>Order Now</p>
+          <p>+256 769 937469</p>
+          <p>Call or WhatsApp</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Detail Section Mobile -->
+    <section class="detail-section-mobile">
+      <div class="detail-flex">
+        <div class="detail-row">
+          <p>Imperial Restaurant</p>
+          <p>Jomo Kenyatta Road, Gulu</p>
+          <p>Opposite Microfinance</p>
+        </div>
+        <div class="detail-row special">
+          <p>
+            <time datetime="weekday monday tuesday wednesday"
+              >Monday - Saturday</time
+            >
+          </p>
+          <p><time datetime="8am 10am">8:00am - 10:00pm</time></p>
+          <p>Closed On Sundays</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Ud Section -->
+    <section id="about-section">
+      <div class="about-section-flex">
+        <img src="/images/triangle.svg" alt="" id="triangle" />
+        <div class="text-content">
+          <img src="/images/Logo.svg" alt="" class="about-logo" />
+          <h2 class="about-section-heading">Who We Are</h2>
+          <p class="special">
+            At the heart of Gulu, Imperial Restaurant is where flavors meet
+            tradition. We take pride in crafting diverse dishes, blending local
+            Ugandan flavors with global inspirations. Whether you're here for a
+            hearty meal, a light bite, or a taste of something new, every plate
+            is prepared with care and passion.
+          </p>
+          <p>
+            Step inside and experience the warmth of good food and great
+            company. From signature local delicacies to international favorites,
+            there’s always something to savor. Come hungry, leave delighted.
+          </p>
+        </div>
+        <div class="image-content">
+          <h2 class="mobile-about-section-heading about-section-heading">
+            Who We Are
+          </h2>
+          <img
+            src="/images/about-section-chef.png"
+            alt="chef"
+            class="chef-img"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu-section">
+      <div class="menu-section-grid">
+        <div class="menu-card">
+          <img src="/images/Pancake img.png" alt="Pancake" />
+          <div class="overlay">
+            <h3>Pancakes</h3>
+            <p>Ugx 6,000</p>
+            <button>Order</button>
+          </div>
+          <div class="menu-card-bottom-overlay">
+            <button>Click To Order</button>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <img src="/images/Salad img.png" alt="Salad" />
+          <div class="overlay">
+            <h3>Salad</h3>
+            <p>Ugx 12,000</p>
+            <button>Order</button>
+          </div>
+          <div class="menu-card-bottom-overlay">
+            <button>Click To Order</button>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <img src="/images/Pizza img.png" alt="Pizza" />
+          <div class="overlay">
+            <h3>Pizza</h3>
+            <p>Ugx 16,000</p>
+            <button>Order</button>
+          </div>
+          <div class="menu-card-bottom-overlay">
+            <button>Click To Order</button>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <img src="/images/Beef Burger img.png" alt="Beef Burger" />
+          <div class="overlay">
+            <h3>Beef Burger</h3>
+            <p>Ugx 20,000</p>
+            <button>Order</button>
+          </div>
+          <div class="menu-card-bottom-overlay">
+            <button>Click To Order</button>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <img src="/images/Steak img.png" alt="Steak" />
+          <div class="overlay">
+            <h3>Steak</h3>
+            <p>Ugx 25,000</p>
+            <button>Order</button>
+          </div>
+          <div class="menu-card-bottom-overlay">
+            <button>Click To Order</button>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <img src="/images/Muchomo img.png" alt="Nyama Choma" />
+          <div class="overlay">
+            <h3>Nyama Choma</h3>
+            <p>Ugx 10,000</p>
+            <button>Order</button>
+          </div>
+          <div class="menu-card-bottom-overlay">
+            <button>Click To Order</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact-section">
+      <div class="contact-section-flex">
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d996.2873856473816!2d32.29914263562858!3d2.7720753412257886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sug!4v1741883812900!5m2!1sen!2sug"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div class="form">
+          <form
+            action="https://formspree.io/f/mqapakpn"
+            method="POST"
+            class="contact-form"
+            id="myForm"
+          >
+            <div>
+              <label for="name">Name</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                required
+                placeholder="What is your name?"
+                minlength="4"
+              />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input
+                type="text"
+                name="email"
+                id="email"
+                placeholder="Write correct email adree"
+                required
+              />
+            </div>
+            <div>
+              <label for="message">Message</label>
+              <textarea
+                name="message"
+                id="message"
+                required
+                placeholder="What would you like to tell us?"
+                minlength="5"
+                maxlength="150"
+              ></textarea>
+              <button class="submit-btn" type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-flex">
+        <div class="col-1">
+          <h3>Navigation</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about-section">About Us</a></li>
+            <li><a href="#contact-section">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-2">
+          <div class="phone">
+            <h3>Order Now</h3>
+            <p>+256 76 8832 047</p>
+          </div>
+          <div class="social">
+            <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <i class="fa-brands fa-whatsapp"></i>
+          </div>
+          <p class="copyright">
+            Copywright @ <span>Imperial Restaurant</span> 2025
+          </p>
+        </div>
+        <div class="col-3">
+          <h3>Gallery</h3>
+          <div class="gallery-container">
+            <img src="/images/Gallery 1.png" alt="" />
+            <img src="/images/Gallery 2.png" alt="" />
+            <img src="/images/Gallery 3.png" alt="" />
+            <img src="/images/Gallery 4.png" alt="" />
+            <img src="/images/Gallery 5.png" alt="" />
+            <img src="/images/Gallery 6.png" alt="" />
+            <img src="/images/Gallery 7.png" alt="" />
+            <img src="/images/Gallery 8.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Footer -->
+      <div class="mobile-footer">
+        <div class="footer-content">
+          <div class="col-1">
+            <h3>Navigation</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#about-section">About Us</a></li>
+              <li><a href="#contact-section">Contact</a></li>
+              <li><a href="#">Gallery</a></li>
+            </ul>
+          </div>
+          <div class="col-2">
+            <div class="phone">
+              <h3>Order Now</h3>
+              <p>+256 76 8832 047</p>
+            </div>
+            <div class="social">
+              <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <i class="fa-brands fa-whatsapp"></i>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p class="copyright">
+            Copywright @ <span>Imperial Restaurant</span> 2025
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/js/script.js"></script>
+  </body>
+</html>
